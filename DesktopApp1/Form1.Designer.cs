@@ -31,6 +31,11 @@ namespace DesktopApp1
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -48,6 +53,22 @@ namespace DesktopApp1
             this.button2 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.check_noTactical = new System.Windows.Forms.CheckBox();
+            this.check_noXmags = new System.Windows.Forms.CheckBox();
+            this.check_noVariZoom = new System.Windows.Forms.CheckBox();
+            this.check_noThermal = new System.Windows.Forms.CheckBox();
+            this.check_noSuppressor = new System.Windows.Forms.CheckBox();
+            this.check_noShotgun = new System.Windows.Forms.CheckBox();
+            this.check_noRapid = new System.Windows.Forms.CheckBox();
+            this.check_noReddot = new System.Windows.Forms.CheckBox();
+            this.check_noHybrid = new System.Windows.Forms.CheckBox();
+            this.check_noHb = new System.Windows.Forms.CheckBox();
+            this.check_noHamr = new System.Windows.Forms.CheckBox();
+            this.check_noGrip = new System.Windows.Forms.CheckBox();
+            this.check_noGl = new System.Windows.Forms.CheckBox();
+            this.check_noHolo = new System.Windows.Forms.CheckBox();
+            this.check_noAkimbo = new System.Windows.Forms.CheckBox();
+            this.check_noAcog = new System.Windows.Forms.CheckBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -73,30 +94,11 @@ namespace DesktopApp1
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.check_noAcog = new System.Windows.Forms.CheckBox();
-            this.check_noAkimbo = new System.Windows.Forms.CheckBox();
-            this.check_noHolo = new System.Windows.Forms.CheckBox();
-            this.check_noGl = new System.Windows.Forms.CheckBox();
-            this.check_noGrip = new System.Windows.Forms.CheckBox();
-            this.check_noHamr = new System.Windows.Forms.CheckBox();
-            this.check_noHb = new System.Windows.Forms.CheckBox();
-            this.check_noHybrid = new System.Windows.Forms.CheckBox();
-            this.check_noReddot = new System.Windows.Forms.CheckBox();
-            this.check_noRapid = new System.Windows.Forms.CheckBox();
-            this.check_noShotgun = new System.Windows.Forms.CheckBox();
-            this.check_noSuppressor = new System.Windows.Forms.CheckBox();
-            this.check_noThermal = new System.Windows.Forms.CheckBox();
-            this.check_noVariZoom = new System.Windows.Forms.CheckBox();
-            this.check_noXmags = new System.Windows.Forms.CheckBox();
-            this.check_noTactical = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -148,6 +150,103 @@ namespace DesktopApp1
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "General settings";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "3",
+            "4",
+            "5",
+            "8",
+            "10",
+            "12",
+            "15",
+            "20",
+            "24",
+            "30",
+            "50",
+            "65",
+            "80",
+            "100",
+            "200",
+            "250",
+            "500",
+            "750",
+            "1000",
+            "1500",
+            "2500",
+            "3000",
+            "5000",
+            "7000",
+            "7500",
+            "10000",
+            "15000",
+            "20000",
+            "30000"});
+            this.comboBox8.Location = new System.Drawing.Point(472, 109);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(82, 21);
+            this.comboBox8.TabIndex = 70;
+            this.comboBox8.Text = "Score limit";
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "0",
+            "5",
+            "10",
+            "15",
+            "30"});
+            this.comboBox7.Location = new System.Drawing.Point(472, 212);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(175, 21);
+            this.comboBox7.TabIndex = 69;
+            this.comboBox7.Text = "Wave respawn delay (seconds)";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(472, 186);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(148, 20);
+            this.textBox2.TabIndex = 68;
+            this.textBox2.Text = "Time limit (0-20 minutes)";
+            this.textBox2.Click += new System.EventHandler(this.textBox2Click);
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "0",
+            "5",
+            "7.5",
+            "10",
+            "15",
+            "30"});
+            this.comboBox6.Location = new System.Drawing.Point(472, 82);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(168, 21);
+            this.comboBox6.TabIndex = 67;
+            this.comboBox6.Text = "Respawn delay (seconds)";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "5",
+            "9"});
+            this.comboBox5.Location = new System.Drawing.Point(472, 36);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(168, 21);
+            this.comboBox5.TabIndex = 66;
+            this.comboBox5.Text = "Number of lives (0 for disabled)";
             // 
             // comboBox4
             // 
@@ -364,8 +463,169 @@ namespace DesktopApp1
             this.tabPage3.Text = "Attachment restrictions";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // check_noTactical
+            // 
+            this.check_noTactical.AutoSize = true;
+            this.check_noTactical.Location = new System.Drawing.Point(511, 119);
+            this.check_noTactical.Name = "check_noTactical";
+            this.check_noTactical.Size = new System.Drawing.Size(64, 17);
+            this.check_noTactical.TabIndex = 15;
+            this.check_noTactical.Text = "Tactical";
+            this.check_noTactical.UseVisualStyleBackColor = true;
+            // 
+            // check_noXmags
+            // 
+            this.check_noXmags.AutoSize = true;
+            this.check_noXmags.Location = new System.Drawing.Point(511, 96);
+            this.check_noXmags.Name = "check_noXmags";
+            this.check_noXmags.Size = new System.Drawing.Size(99, 17);
+            this.check_noXmags.TabIndex = 14;
+            this.check_noXmags.Text = "Extended mags";
+            this.check_noXmags.UseVisualStyleBackColor = true;
+            // 
+            // check_noVariZoom
+            // 
+            this.check_noVariZoom.AutoSize = true;
+            this.check_noVariZoom.Location = new System.Drawing.Point(511, 73);
+            this.check_noVariZoom.Name = "check_noVariZoom";
+            this.check_noVariZoom.Size = new System.Drawing.Size(112, 17);
+            this.check_noVariZoom.TabIndex = 13;
+            this.check_noVariZoom.Text = "Varial zoom scope";
+            this.check_noVariZoom.UseVisualStyleBackColor = true;
+            // 
+            // check_noThermal
+            // 
+            this.check_noThermal.AutoSize = true;
+            this.check_noThermal.Location = new System.Drawing.Point(511, 50);
+            this.check_noThermal.Name = "check_noThermal";
+            this.check_noThermal.Size = new System.Drawing.Size(89, 17);
+            this.check_noThermal.TabIndex = 12;
+            this.check_noThermal.Text = "Thermal sight";
+            this.check_noThermal.UseVisualStyleBackColor = true;
+            // 
+            // check_noSuppressor
+            // 
+            this.check_noSuppressor.AutoSize = true;
+            this.check_noSuppressor.Location = new System.Drawing.Point(511, 27);
+            this.check_noSuppressor.Name = "check_noSuppressor";
+            this.check_noSuppressor.Size = new System.Drawing.Size(122, 17);
+            this.check_noSuppressor.TabIndex = 11;
+            this.check_noSuppressor.Text = "Suppressor/Silencer";
+            this.check_noSuppressor.UseVisualStyleBackColor = true;
+            // 
+            // check_noShotgun
+            // 
+            this.check_noShotgun.AutoSize = true;
+            this.check_noShotgun.Location = new System.Drawing.Point(511, 188);
+            this.check_noShotgun.Name = "check_noShotgun";
+            this.check_noShotgun.Size = new System.Drawing.Size(122, 17);
+            this.check_noShotgun.TabIndex = 10;
+            this.check_noShotgun.Text = "Underbarrel shotgun";
+            this.check_noShotgun.UseVisualStyleBackColor = true;
+            // 
+            // check_noRapid
+            // 
+            this.check_noRapid.AutoSize = true;
+            this.check_noRapid.Location = new System.Drawing.Point(208, 188);
+            this.check_noRapid.Name = "check_noRapid";
+            this.check_noRapid.Size = new System.Drawing.Size(71, 17);
+            this.check_noRapid.TabIndex = 9;
+            this.check_noRapid.Text = "Rapid fire";
+            this.check_noRapid.UseVisualStyleBackColor = true;
+            // 
+            // check_noReddot
+            // 
+            this.check_noReddot.AutoSize = true;
+            this.check_noReddot.Location = new System.Drawing.Point(511, 165);
+            this.check_noReddot.Name = "check_noReddot";
+            this.check_noReddot.Size = new System.Drawing.Size(89, 17);
+            this.check_noReddot.TabIndex = 8;
+            this.check_noReddot.Text = "Red dot sight";
+            this.check_noReddot.UseVisualStyleBackColor = true;
+            // 
+            // check_noHybrid
+            // 
+            this.check_noHybrid.AutoSize = true;
+            this.check_noHybrid.Location = new System.Drawing.Point(208, 165);
+            this.check_noHybrid.Name = "check_noHybrid";
+            this.check_noHybrid.Size = new System.Drawing.Size(81, 17);
+            this.check_noHybrid.TabIndex = 7;
+            this.check_noHybrid.Text = "Hybrid sight";
+            this.check_noHybrid.UseVisualStyleBackColor = true;
+            // 
+            // check_noHb
+            // 
+            this.check_noHb.AutoSize = true;
+            this.check_noHb.Location = new System.Drawing.Point(511, 142);
+            this.check_noHb.Name = "check_noHb";
+            this.check_noHb.Size = new System.Drawing.Size(107, 17);
+            this.check_noHb.TabIndex = 6;
+            this.check_noHb.Text = "Heartbeat sensor";
+            this.check_noHb.UseVisualStyleBackColor = true;
+            // 
+            // check_noHamr
+            // 
+            this.check_noHamr.AutoSize = true;
+            this.check_noHamr.Location = new System.Drawing.Point(208, 142);
+            this.check_noHamr.Name = "check_noHamr";
+            this.check_noHamr.Size = new System.Drawing.Size(83, 17);
+            this.check_noHamr.TabIndex = 5;
+            this.check_noHamr.Text = "HAMR sight";
+            this.check_noHamr.UseVisualStyleBackColor = true;
+            // 
+            // check_noGrip
+            // 
+            this.check_noGrip.AutoSize = true;
+            this.check_noGrip.Location = new System.Drawing.Point(208, 119);
+            this.check_noGrip.Name = "check_noGrip";
+            this.check_noGrip.Size = new System.Drawing.Size(45, 17);
+            this.check_noGrip.TabIndex = 4;
+            this.check_noGrip.Text = "Grip";
+            this.check_noGrip.UseVisualStyleBackColor = true;
+            // 
+            // check_noGl
+            // 
+            this.check_noGl.AutoSize = true;
+            this.check_noGl.Location = new System.Drawing.Point(208, 96);
+            this.check_noGl.Name = "check_noGl";
+            this.check_noGl.Size = new System.Drawing.Size(111, 17);
+            this.check_noGl.TabIndex = 3;
+            this.check_noGl.Text = "Grenade launcher";
+            this.check_noGl.UseVisualStyleBackColor = true;
+            // 
+            // check_noHolo
+            // 
+            this.check_noHolo.AutoSize = true;
+            this.check_noHolo.Location = new System.Drawing.Point(208, 73);
+            this.check_noHolo.Name = "check_noHolo";
+            this.check_noHolo.Size = new System.Drawing.Size(83, 17);
+            this.check_noHolo.TabIndex = 2;
+            this.check_noHolo.Text = "Holographic";
+            this.check_noHolo.UseVisualStyleBackColor = true;
+            // 
+            // check_noAkimbo
+            // 
+            this.check_noAkimbo.AutoSize = true;
+            this.check_noAkimbo.Location = new System.Drawing.Point(208, 50);
+            this.check_noAkimbo.Name = "check_noAkimbo";
+            this.check_noAkimbo.Size = new System.Drawing.Size(61, 17);
+            this.check_noAkimbo.TabIndex = 1;
+            this.check_noAkimbo.Text = "Akimbo";
+            this.check_noAkimbo.UseVisualStyleBackColor = true;
+            // 
+            // check_noAcog
+            // 
+            this.check_noAcog.AutoSize = true;
+            this.check_noAcog.Location = new System.Drawing.Point(208, 27);
+            this.check_noAcog.Name = "check_noAcog";
+            this.check_noAcog.Size = new System.Drawing.Size(56, 17);
+            this.check_noAcog.TabIndex = 0;
+            this.check_noAcog.Text = "ACOG";
+            this.check_noAcog.UseVisualStyleBackColor = true;
+            // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.checkBox11);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -634,262 +894,15 @@ namespace DesktopApp1
             this.label9.TabIndex = 21;
             this.label9.Text = "Health regen rate (default: 5, 0-10)";
             // 
-            // comboBox5
+            // checkBox11
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "5",
-            "9"});
-            this.comboBox5.Location = new System.Drawing.Point(472, 36);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(168, 21);
-            this.comboBox5.TabIndex = 66;
-            this.comboBox5.Text = "Number of lives (0 for disabled)";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "0",
-            "5",
-            "7.5",
-            "10",
-            "15",
-            "30"});
-            this.comboBox6.Location = new System.Drawing.Point(472, 82);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(168, 21);
-            this.comboBox6.TabIndex = 67;
-            this.comboBox6.Text = "Respawn delay (seconds)";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(472, 186);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 20);
-            this.textBox2.TabIndex = 68;
-            this.textBox2.Text = "Time limit (0-20 minutes)";
-            this.textBox2.Click += new System.EventHandler(this.textBox2Click);
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            "0",
-            "5",
-            "10",
-            "15",
-            "30"});
-            this.comboBox7.Location = new System.Drawing.Point(472, 212);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(175, 21);
-            this.comboBox7.TabIndex = 69;
-            this.comboBox7.Text = "Wave respawn delay (seconds)";
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "3",
-            "4",
-            "5",
-            "8",
-            "10",
-            "12",
-            "15",
-            "20",
-            "24",
-            "30",
-            "50",
-            "65",
-            "80",
-            "100",
-            "200",
-            "250",
-            "500",
-            "750",
-            "1000",
-            "1500",
-            "2500",
-            "3000",
-            "5000",
-            "7000",
-            "7500",
-            "10000",
-            "15000",
-            "20000",
-            "30000"});
-            this.comboBox8.Location = new System.Drawing.Point(472, 109);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(82, 21);
-            this.comboBox8.TabIndex = 70;
-            this.comboBox8.Text = "Score limit";
-            // 
-            // check_noAcog
-            // 
-            this.check_noAcog.AutoSize = true;
-            this.check_noAcog.Location = new System.Drawing.Point(208, 27);
-            this.check_noAcog.Name = "check_noAcog";
-            this.check_noAcog.Size = new System.Drawing.Size(56, 17);
-            this.check_noAcog.TabIndex = 0;
-            this.check_noAcog.Text = "ACOG";
-            this.check_noAcog.UseVisualStyleBackColor = true;
-            // 
-            // check_noAkimbo
-            // 
-            this.check_noAkimbo.AutoSize = true;
-            this.check_noAkimbo.Location = new System.Drawing.Point(208, 50);
-            this.check_noAkimbo.Name = "check_noAkimbo";
-            this.check_noAkimbo.Size = new System.Drawing.Size(61, 17);
-            this.check_noAkimbo.TabIndex = 1;
-            this.check_noAkimbo.Text = "Akimbo";
-            this.check_noAkimbo.UseVisualStyleBackColor = true;
-            // 
-            // check_noHolo
-            // 
-            this.check_noHolo.AutoSize = true;
-            this.check_noHolo.Location = new System.Drawing.Point(208, 73);
-            this.check_noHolo.Name = "check_noHolo";
-            this.check_noHolo.Size = new System.Drawing.Size(83, 17);
-            this.check_noHolo.TabIndex = 2;
-            this.check_noHolo.Text = "Holographic";
-            this.check_noHolo.UseVisualStyleBackColor = true;
-            // 
-            // check_noGl
-            // 
-            this.check_noGl.AutoSize = true;
-            this.check_noGl.Location = new System.Drawing.Point(208, 96);
-            this.check_noGl.Name = "check_noGl";
-            this.check_noGl.Size = new System.Drawing.Size(111, 17);
-            this.check_noGl.TabIndex = 3;
-            this.check_noGl.Text = "Grenade launcher";
-            this.check_noGl.UseVisualStyleBackColor = true;
-            // 
-            // check_noGrip
-            // 
-            this.check_noGrip.AutoSize = true;
-            this.check_noGrip.Location = new System.Drawing.Point(208, 119);
-            this.check_noGrip.Name = "check_noGrip";
-            this.check_noGrip.Size = new System.Drawing.Size(45, 17);
-            this.check_noGrip.TabIndex = 4;
-            this.check_noGrip.Text = "Grip";
-            this.check_noGrip.UseVisualStyleBackColor = true;
-            // 
-            // check_noHamr
-            // 
-            this.check_noHamr.AutoSize = true;
-            this.check_noHamr.Location = new System.Drawing.Point(208, 142);
-            this.check_noHamr.Name = "check_noHamr";
-            this.check_noHamr.Size = new System.Drawing.Size(83, 17);
-            this.check_noHamr.TabIndex = 5;
-            this.check_noHamr.Text = "HAMR sight";
-            this.check_noHamr.UseVisualStyleBackColor = true;
-            // 
-            // check_noHb
-            // 
-            this.check_noHb.AutoSize = true;
-            this.check_noHb.Location = new System.Drawing.Point(511, 142);
-            this.check_noHb.Name = "check_noHb";
-            this.check_noHb.Size = new System.Drawing.Size(107, 17);
-            this.check_noHb.TabIndex = 6;
-            this.check_noHb.Text = "Heartbeat sensor";
-            this.check_noHb.UseVisualStyleBackColor = true;
-            // 
-            // check_noHybrid
-            // 
-            this.check_noHybrid.AutoSize = true;
-            this.check_noHybrid.Location = new System.Drawing.Point(208, 165);
-            this.check_noHybrid.Name = "check_noHybrid";
-            this.check_noHybrid.Size = new System.Drawing.Size(81, 17);
-            this.check_noHybrid.TabIndex = 7;
-            this.check_noHybrid.Text = "Hybrid sight";
-            this.check_noHybrid.UseVisualStyleBackColor = true;
-            // 
-            // check_noReddot
-            // 
-            this.check_noReddot.AutoSize = true;
-            this.check_noReddot.Location = new System.Drawing.Point(511, 165);
-            this.check_noReddot.Name = "check_noReddot";
-            this.check_noReddot.Size = new System.Drawing.Size(89, 17);
-            this.check_noReddot.TabIndex = 8;
-            this.check_noReddot.Text = "Red dot sight";
-            this.check_noReddot.UseVisualStyleBackColor = true;
-            // 
-            // check_noRapid
-            // 
-            this.check_noRapid.AutoSize = true;
-            this.check_noRapid.Location = new System.Drawing.Point(208, 188);
-            this.check_noRapid.Name = "check_noRapid";
-            this.check_noRapid.Size = new System.Drawing.Size(71, 17);
-            this.check_noRapid.TabIndex = 9;
-            this.check_noRapid.Text = "Rapid fire";
-            this.check_noRapid.UseVisualStyleBackColor = true;
-            // 
-            // check_noShotgun
-            // 
-            this.check_noShotgun.AutoSize = true;
-            this.check_noShotgun.Location = new System.Drawing.Point(511, 188);
-            this.check_noShotgun.Name = "check_noShotgun";
-            this.check_noShotgun.Size = new System.Drawing.Size(122, 17);
-            this.check_noShotgun.TabIndex = 10;
-            this.check_noShotgun.Text = "Underbarrel shotgun";
-            this.check_noShotgun.UseVisualStyleBackColor = true;
-            // 
-            // check_noSuppressor
-            // 
-            this.check_noSuppressor.AutoSize = true;
-            this.check_noSuppressor.Location = new System.Drawing.Point(511, 27);
-            this.check_noSuppressor.Name = "check_noSuppressor";
-            this.check_noSuppressor.Size = new System.Drawing.Size(122, 17);
-            this.check_noSuppressor.TabIndex = 11;
-            this.check_noSuppressor.Text = "Suppressor/Silencer";
-            this.check_noSuppressor.UseVisualStyleBackColor = true;
-            // 
-            // check_noThermal
-            // 
-            this.check_noThermal.AutoSize = true;
-            this.check_noThermal.Location = new System.Drawing.Point(511, 50);
-            this.check_noThermal.Name = "check_noThermal";
-            this.check_noThermal.Size = new System.Drawing.Size(89, 17);
-            this.check_noThermal.TabIndex = 12;
-            this.check_noThermal.Text = "Thermal sight";
-            this.check_noThermal.UseVisualStyleBackColor = true;
-            // 
-            // check_noVariZoom
-            // 
-            this.check_noVariZoom.AutoSize = true;
-            this.check_noVariZoom.Location = new System.Drawing.Point(511, 73);
-            this.check_noVariZoom.Name = "check_noVariZoom";
-            this.check_noVariZoom.Size = new System.Drawing.Size(112, 17);
-            this.check_noVariZoom.TabIndex = 13;
-            this.check_noVariZoom.Text = "Varial zoom scope";
-            this.check_noVariZoom.UseVisualStyleBackColor = true;
-            // 
-            // check_noXmags
-            // 
-            this.check_noXmags.AutoSize = true;
-            this.check_noXmags.Location = new System.Drawing.Point(511, 96);
-            this.check_noXmags.Name = "check_noXmags";
-            this.check_noXmags.Size = new System.Drawing.Size(99, 17);
-            this.check_noXmags.TabIndex = 14;
-            this.check_noXmags.Text = "Extended mags";
-            this.check_noXmags.UseVisualStyleBackColor = true;
-            // 
-            // check_noTactical
-            // 
-            this.check_noTactical.AutoSize = true;
-            this.check_noTactical.Location = new System.Drawing.Point(511, 119);
-            this.check_noTactical.Name = "check_noTactical";
-            this.check_noTactical.Size = new System.Drawing.Size(64, 17);
-            this.check_noTactical.TabIndex = 15;
-            this.check_noTactical.Text = "Tactical";
-            this.check_noTactical.UseVisualStyleBackColor = true;
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(87, 44);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(56, 17);
+            this.checkBox11.TabIndex = 1;
+            this.checkBox11.Text = "ACOG";
+            this.checkBox11.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -907,6 +920,8 @@ namespace DesktopApp1
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
             this.ResumeLayout(false);
@@ -981,6 +996,7 @@ namespace DesktopApp1
         private System.Windows.Forms.CheckBox check_noHolo;
         private System.Windows.Forms.CheckBox check_noAkimbo;
         private System.Windows.Forms.CheckBox check_noAcog;
+        private System.Windows.Forms.CheckBox checkBox11;
     }
 }
 
