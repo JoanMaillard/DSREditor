@@ -70,6 +70,50 @@ namespace DesktopApp1
             this.check_noAkimbo = new System.Windows.Forms.CheckBox();
             this.check_noAcog = new System.Windows.Forms.CheckBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.lbl_killstreakType_sup = new System.Windows.Forms.Label();
+            this.lbl_killstreakType_spec = new System.Windows.Forms.Label();
+            this.lbl_killstreakType_asst = new System.Windows.Forms.Label();
+            this.check_noBlastShield = new System.Windows.Forms.CheckBox();
+            this.check_noStealthBomb = new System.Windows.Forms.CheckBox();
+            this.check_noAdvUAV = new System.Windows.Forms.CheckBox();
+            this.check_noUavAssault = new System.Windows.Forms.CheckBox();
+            this.check_noUavSupport = new System.Windows.Forms.CheckBox();
+            this.check_noStalker = new System.Windows.Forms.CheckBox();
+            this.check_noScavenger = new System.Windows.Forms.CheckBox();
+            this.check_noDS = new System.Windows.Forms.CheckBox();
+            this.check_noQuickdraw = new System.Windows.Forms.CheckBox();
+            this.check_noRecon = new System.Windows.Forms.CheckBox();
+            this.check_noMarathon = new System.Windows.Forms.CheckBox();
+            this.check_noHardline = new System.Windows.Forms.CheckBox();
+            this.check_noSoH = new System.Windows.Forms.CheckBox();
+            this.check_noSitRep = new System.Windows.Forms.CheckBox();
+            this.check_noAssassin = new System.Windows.Forms.CheckBox();
+            this.check_noSteadyAim = new System.Windows.Forms.CheckBox();
+            this.check_noBlindEye = new System.Windows.Forms.CheckBox();
+            this.check_noRemoteSentry = new System.Windows.Forms.CheckBox();
+            this.check_noPredator = new System.Windows.Forms.CheckBox();
+            this.check_noPrecision = new System.Windows.Forms.CheckBox();
+            this.check_noOspreyGun = new System.Windows.Forms.CheckBox();
+            this.check_noMarksman = new System.Windows.Forms.CheckBox();
+            this.check_noSAM = new System.Windows.Forms.CheckBox();
+            this.check_noReconDrone = new System.Windows.Forms.CheckBox();
+            this.check_noReaper = new System.Windows.Forms.CheckBox();
+            this.check_noPaveLow = new System.Windows.Forms.CheckBox();
+            this.check_noHelo = new System.Windows.Forms.CheckBox();
+            this.check_noEscortairdrop = new System.Windows.Forms.CheckBox();
+            this.check_noEMP = new System.Windows.Forms.CheckBox();
+            this.check_noBalvests = new System.Windows.Forms.CheckBox();
+            this.check_noOverwatch = new System.Windows.Forms.CheckBox();
+            this.check_noCUAV = new System.Windows.Forms.CheckBox();
+            this.check_noStrafeRun = new System.Windows.Forms.CheckBox();
+            this.check_noTrapcp = new System.Windows.Forms.CheckBox();
+            this.check_noIMS = new System.Windows.Forms.CheckBox();
+            this.check_noSentry = new System.Windows.Forms.CheckBox();
+            this.check_noRemotedrone = new System.Windows.Forms.CheckBox();
+            this.check_noJugrecon = new System.Windows.Forms.CheckBox();
+            this.check_noJug = new System.Windows.Forms.CheckBox();
+            this.check_noCarepackage = new System.Windows.Forms.CheckBox();
+            this.check_noAC130 = new System.Windows.Forms.CheckBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
@@ -94,7 +138,6 @@ namespace DesktopApp1
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -110,7 +153,6 @@ namespace DesktopApp1
             this.button1.TabIndex = 0;
             this.button1.Text = "Open file";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // tabPage2
             // 
@@ -211,10 +253,11 @@ namespace DesktopApp1
             // 
             this.textBox2.Location = new System.Drawing.Point(472, 186);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 20);
+            this.textBox2.Size = new System.Drawing.Size(121, 20);
             this.textBox2.TabIndex = 68;
             this.textBox2.Text = "Time limit (0-20 minutes)";
             this.textBox2.Click += new System.EventHandler(this.textBox2Click);
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // comboBox6
             // 
@@ -260,7 +303,6 @@ namespace DesktopApp1
             this.comboBox4.Size = new System.Drawing.Size(145, 21);
             this.comboBox4.TabIndex = 65;
             this.comboBox4.Text = "Spectator mode allowed";
-            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // textBox1
             // 
@@ -468,9 +510,9 @@ namespace DesktopApp1
             this.check_noTactical.AutoSize = true;
             this.check_noTactical.Location = new System.Drawing.Point(511, 119);
             this.check_noTactical.Name = "check_noTactical";
-            this.check_noTactical.Size = new System.Drawing.Size(64, 17);
+            this.check_noTactical.Size = new System.Drawing.Size(90, 17);
             this.check_noTactical.TabIndex = 15;
-            this.check_noTactical.Text = "Tactical";
+            this.check_noTactical.Text = "Tactical knife";
             this.check_noTactical.UseVisualStyleBackColor = true;
             // 
             // check_noXmags
@@ -625,7 +667,50 @@ namespace DesktopApp1
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.checkBox11);
+            this.tabPage4.Controls.Add(this.lbl_killstreakType_sup);
+            this.tabPage4.Controls.Add(this.lbl_killstreakType_spec);
+            this.tabPage4.Controls.Add(this.lbl_killstreakType_asst);
+            this.tabPage4.Controls.Add(this.check_noBlastShield);
+            this.tabPage4.Controls.Add(this.check_noStealthBomb);
+            this.tabPage4.Controls.Add(this.check_noAdvUAV);
+            this.tabPage4.Controls.Add(this.check_noUavAssault);
+            this.tabPage4.Controls.Add(this.check_noUavSupport);
+            this.tabPage4.Controls.Add(this.check_noStalker);
+            this.tabPage4.Controls.Add(this.check_noScavenger);
+            this.tabPage4.Controls.Add(this.check_noDS);
+            this.tabPage4.Controls.Add(this.check_noQuickdraw);
+            this.tabPage4.Controls.Add(this.check_noRecon);
+            this.tabPage4.Controls.Add(this.check_noMarathon);
+            this.tabPage4.Controls.Add(this.check_noHardline);
+            this.tabPage4.Controls.Add(this.check_noSoH);
+            this.tabPage4.Controls.Add(this.check_noSitRep);
+            this.tabPage4.Controls.Add(this.check_noAssassin);
+            this.tabPage4.Controls.Add(this.check_noSteadyAim);
+            this.tabPage4.Controls.Add(this.check_noBlindEye);
+            this.tabPage4.Controls.Add(this.check_noRemoteSentry);
+            this.tabPage4.Controls.Add(this.check_noPredator);
+            this.tabPage4.Controls.Add(this.check_noPrecision);
+            this.tabPage4.Controls.Add(this.check_noOspreyGun);
+            this.tabPage4.Controls.Add(this.check_noMarksman);
+            this.tabPage4.Controls.Add(this.check_noSAM);
+            this.tabPage4.Controls.Add(this.check_noReconDrone);
+            this.tabPage4.Controls.Add(this.check_noReaper);
+            this.tabPage4.Controls.Add(this.check_noPaveLow);
+            this.tabPage4.Controls.Add(this.check_noHelo);
+            this.tabPage4.Controls.Add(this.check_noEscortairdrop);
+            this.tabPage4.Controls.Add(this.check_noEMP);
+            this.tabPage4.Controls.Add(this.check_noBalvests);
+            this.tabPage4.Controls.Add(this.check_noOverwatch);
+            this.tabPage4.Controls.Add(this.check_noCUAV);
+            this.tabPage4.Controls.Add(this.check_noStrafeRun);
+            this.tabPage4.Controls.Add(this.check_noTrapcp);
+            this.tabPage4.Controls.Add(this.check_noIMS);
+            this.tabPage4.Controls.Add(this.check_noSentry);
+            this.tabPage4.Controls.Add(this.check_noRemotedrone);
+            this.tabPage4.Controls.Add(this.check_noJugrecon);
+            this.tabPage4.Controls.Add(this.check_noJug);
+            this.tabPage4.Controls.Add(this.check_noCarepackage);
+            this.tabPage4.Controls.Add(this.check_noAC130);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -633,6 +718,443 @@ namespace DesktopApp1
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Killstreak restrictions";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // lbl_killstreakType_sup
+            // 
+            this.lbl_killstreakType_sup.AutoSize = true;
+            this.lbl_killstreakType_sup.Location = new System.Drawing.Point(620, 20);
+            this.lbl_killstreakType_sup.Name = "lbl_killstreakType_sup";
+            this.lbl_killstreakType_sup.Size = new System.Drawing.Size(44, 13);
+            this.lbl_killstreakType_sup.TabIndex = 59;
+            this.lbl_killstreakType_sup.Text = "Support";
+            // 
+            // lbl_killstreakType_spec
+            // 
+            this.lbl_killstreakType_spec.AutoSize = true;
+            this.lbl_killstreakType_spec.Location = new System.Drawing.Point(319, 20);
+            this.lbl_killstreakType_spec.Name = "lbl_killstreakType_spec";
+            this.lbl_killstreakType_spec.Size = new System.Drawing.Size(52, 13);
+            this.lbl_killstreakType_spec.TabIndex = 58;
+            this.lbl_killstreakType_spec.Text = "Specialist";
+            // 
+            // lbl_killstreakType_asst
+            // 
+            this.lbl_killstreakType_asst.AutoSize = true;
+            this.lbl_killstreakType_asst.Location = new System.Drawing.Point(30, 20);
+            this.lbl_killstreakType_asst.Name = "lbl_killstreakType_asst";
+            this.lbl_killstreakType_asst.Size = new System.Drawing.Size(41, 13);
+            this.lbl_killstreakType_asst.TabIndex = 57;
+            this.lbl_killstreakType_asst.Text = "Assault";
+            // 
+            // check_noBlastShield
+            // 
+            this.check_noBlastShield.AutoSize = true;
+            this.check_noBlastShield.Location = new System.Drawing.Point(322, 189);
+            this.check_noBlastShield.Name = "check_noBlastShield";
+            this.check_noBlastShield.Size = new System.Drawing.Size(79, 17);
+            this.check_noBlastShield.TabIndex = 56;
+            this.check_noBlastShield.Text = "Blast shield";
+            this.check_noBlastShield.UseVisualStyleBackColor = true;
+            // 
+            // check_noStealthBomb
+            // 
+            this.check_noStealthBomb.AutoSize = true;
+            this.check_noStealthBomb.Location = new System.Drawing.Point(623, 235);
+            this.check_noStealthBomb.Name = "check_noStealthBomb";
+            this.check_noStealthBomb.Size = new System.Drawing.Size(97, 17);
+            this.check_noStealthBomb.TabIndex = 55;
+            this.check_noStealthBomb.Text = "Stealth bomber";
+            this.check_noStealthBomb.UseVisualStyleBackColor = true;
+            // 
+            // check_noAdvUAV
+            // 
+            this.check_noAdvUAV.AutoSize = true;
+            this.check_noAdvUAV.Location = new System.Drawing.Point(623, 189);
+            this.check_noAdvUAV.Name = "check_noAdvUAV";
+            this.check_noAdvUAV.Size = new System.Drawing.Size(100, 17);
+            this.check_noAdvUAV.TabIndex = 54;
+            this.check_noAdvUAV.Text = "Advanced UAV";
+            this.check_noAdvUAV.UseVisualStyleBackColor = true;
+            // 
+            // check_noUavAssault
+            // 
+            this.check_noUavAssault.AutoSize = true;
+            this.check_noUavAssault.Location = new System.Drawing.Point(33, 51);
+            this.check_noUavAssault.Name = "check_noUavAssault";
+            this.check_noUavAssault.Size = new System.Drawing.Size(48, 17);
+            this.check_noUavAssault.TabIndex = 53;
+            this.check_noUavAssault.Text = "UAV";
+            this.check_noUavAssault.UseVisualStyleBackColor = true;
+            // 
+            // check_noUavSupport
+            // 
+            this.check_noUavSupport.AutoSize = true;
+            this.check_noUavSupport.Location = new System.Drawing.Point(623, 51);
+            this.check_noUavSupport.Name = "check_noUavSupport";
+            this.check_noUavSupport.Size = new System.Drawing.Size(48, 17);
+            this.check_noUavSupport.TabIndex = 52;
+            this.check_noUavSupport.Text = "UAV";
+            this.check_noUavSupport.UseVisualStyleBackColor = true;
+            // 
+            // check_noStalker
+            // 
+            this.check_noStalker.AutoSize = true;
+            this.check_noStalker.Location = new System.Drawing.Point(470, 51);
+            this.check_noStalker.Name = "check_noStalker";
+            this.check_noStalker.Size = new System.Drawing.Size(59, 17);
+            this.check_noStalker.TabIndex = 51;
+            this.check_noStalker.Text = "Stalker";
+            this.check_noStalker.UseVisualStyleBackColor = true;
+            // 
+            // check_noScavenger
+            // 
+            this.check_noScavenger.AutoSize = true;
+            this.check_noScavenger.Location = new System.Drawing.Point(322, 143);
+            this.check_noScavenger.Name = "check_noScavenger";
+            this.check_noScavenger.Size = new System.Drawing.Size(78, 17);
+            this.check_noScavenger.TabIndex = 50;
+            this.check_noScavenger.Text = "Scavenger";
+            this.check_noScavenger.UseVisualStyleBackColor = true;
+            // 
+            // check_noDS
+            // 
+            this.check_noDS.AutoSize = true;
+            this.check_noDS.Location = new System.Drawing.Point(470, 120);
+            this.check_noDS.Name = "check_noDS";
+            this.check_noDS.Size = new System.Drawing.Size(90, 17);
+            this.check_noDS.TabIndex = 49;
+            this.check_noDS.Text = "Dead Silence";
+            this.check_noDS.UseVisualStyleBackColor = true;
+            // 
+            // check_noQuickdraw
+            // 
+            this.check_noQuickdraw.AutoSize = true;
+            this.check_noQuickdraw.Location = new System.Drawing.Point(322, 166);
+            this.check_noQuickdraw.Name = "check_noQuickdraw";
+            this.check_noQuickdraw.Size = new System.Drawing.Size(77, 17);
+            this.check_noQuickdraw.TabIndex = 48;
+            this.check_noQuickdraw.Text = "Quickdraw";
+            this.check_noQuickdraw.UseVisualStyleBackColor = true;
+            // 
+            // check_noRecon
+            // 
+            this.check_noRecon.AutoSize = true;
+            this.check_noRecon.Location = new System.Drawing.Point(322, 51);
+            this.check_noRecon.Name = "check_noRecon";
+            this.check_noRecon.Size = new System.Drawing.Size(58, 17);
+            this.check_noRecon.TabIndex = 47;
+            this.check_noRecon.Text = "Recon";
+            this.check_noRecon.UseVisualStyleBackColor = true;
+            // 
+            // check_noMarathon
+            // 
+            this.check_noMarathon.AutoSize = true;
+            this.check_noMarathon.Location = new System.Drawing.Point(322, 120);
+            this.check_noMarathon.Name = "check_noMarathon";
+            this.check_noMarathon.Size = new System.Drawing.Size(124, 17);
+            this.check_noMarathon.TabIndex = 46;
+            this.check_noMarathon.Text = "Extreme conditioning";
+            this.check_noMarathon.UseVisualStyleBackColor = true;
+            // 
+            // check_noHardline
+            // 
+            this.check_noHardline.AutoSize = true;
+            this.check_noHardline.Location = new System.Drawing.Point(322, 212);
+            this.check_noHardline.Name = "check_noHardline";
+            this.check_noHardline.Size = new System.Drawing.Size(65, 17);
+            this.check_noHardline.TabIndex = 45;
+            this.check_noHardline.Text = "Hardline";
+            this.check_noHardline.UseVisualStyleBackColor = true;
+            // 
+            // check_noSoH
+            // 
+            this.check_noSoH.AutoSize = true;
+            this.check_noSoH.Location = new System.Drawing.Point(322, 74);
+            this.check_noSoH.Name = "check_noSoH";
+            this.check_noSoH.Size = new System.Drawing.Size(97, 17);
+            this.check_noSoH.TabIndex = 44;
+            this.check_noSoH.Text = "Sleight of hand";
+            this.check_noSoH.UseVisualStyleBackColor = true;
+            // 
+            // check_noSitRep
+            // 
+            this.check_noSitRep.AutoSize = true;
+            this.check_noSitRep.Location = new System.Drawing.Point(470, 74);
+            this.check_noSitRep.Name = "check_noSitRep";
+            this.check_noSitRep.Size = new System.Drawing.Size(61, 17);
+            this.check_noSitRep.TabIndex = 43;
+            this.check_noSitRep.Text = "Sit Rep";
+            this.check_noSitRep.UseVisualStyleBackColor = true;
+            // 
+            // check_noAssassin
+            // 
+            this.check_noAssassin.AutoSize = true;
+            this.check_noAssassin.Location = new System.Drawing.Point(322, 235);
+            this.check_noAssassin.Name = "check_noAssassin";
+            this.check_noAssassin.Size = new System.Drawing.Size(67, 17);
+            this.check_noAssassin.TabIndex = 42;
+            this.check_noAssassin.Text = "Assassin";
+            this.check_noAssassin.UseVisualStyleBackColor = true;
+            // 
+            // check_noSteadyAim
+            // 
+            this.check_noSteadyAim.AutoSize = true;
+            this.check_noSteadyAim.Location = new System.Drawing.Point(470, 97);
+            this.check_noSteadyAim.Name = "check_noSteadyAim";
+            this.check_noSteadyAim.Size = new System.Drawing.Size(78, 17);
+            this.check_noSteadyAim.TabIndex = 41;
+            this.check_noSteadyAim.Text = "Steady aim";
+            this.check_noSteadyAim.UseVisualStyleBackColor = true;
+            // 
+            // check_noBlindEye
+            // 
+            this.check_noBlindEye.AutoSize = true;
+            this.check_noBlindEye.Location = new System.Drawing.Point(322, 97);
+            this.check_noBlindEye.Name = "check_noBlindEye";
+            this.check_noBlindEye.Size = new System.Drawing.Size(69, 17);
+            this.check_noBlindEye.TabIndex = 40;
+            this.check_noBlindEye.Text = "Blind eye";
+            this.check_noBlindEye.UseVisualStyleBackColor = true;
+            // 
+            // check_noRemoteSentry
+            // 
+            this.check_noRemoteSentry.AutoSize = true;
+            this.check_noRemoteSentry.Location = new System.Drawing.Point(623, 212);
+            this.check_noRemoteSentry.Name = "check_noRemoteSentry";
+            this.check_noRemoteSentry.Size = new System.Drawing.Size(94, 17);
+            this.check_noRemoteSentry.TabIndex = 39;
+            this.check_noRemoteSentry.Text = "Remote sentry";
+            this.check_noRemoteSentry.UseVisualStyleBackColor = true;
+            // 
+            // check_noPredator
+            // 
+            this.check_noPredator.AutoSize = true;
+            this.check_noPredator.Location = new System.Drawing.Point(33, 120);
+            this.check_noPredator.Name = "check_noPredator";
+            this.check_noPredator.Size = new System.Drawing.Size(99, 17);
+            this.check_noPredator.TabIndex = 38;
+            this.check_noPredator.Text = "Predator missile";
+            this.check_noPredator.UseVisualStyleBackColor = true;
+            // 
+            // check_noPrecision
+            // 
+            this.check_noPrecision.AutoSize = true;
+            this.check_noPrecision.Location = new System.Drawing.Point(33, 166);
+            this.check_noPrecision.Name = "check_noPrecision";
+            this.check_noPrecision.Size = new System.Drawing.Size(108, 17);
+            this.check_noPrecision.TabIndex = 37;
+            this.check_noPrecision.Text = "Precision airstrike";
+            this.check_noPrecision.UseVisualStyleBackColor = true;
+            // 
+            // check_noOspreyGun
+            // 
+            this.check_noOspreyGun.AutoSize = true;
+            this.check_noOspreyGun.Location = new System.Drawing.Point(172, 120);
+            this.check_noOspreyGun.Name = "check_noOspreyGun";
+            this.check_noOspreyGun.Size = new System.Drawing.Size(95, 17);
+            this.check_noOspreyGun.TabIndex = 36;
+            this.check_noOspreyGun.Text = "Osprey gunner";
+            this.check_noOspreyGun.UseVisualStyleBackColor = true;
+            // 
+            // check_noMarksman
+            // 
+            this.check_noMarksman.AutoSize = true;
+            this.check_noMarksman.Location = new System.Drawing.Point(322, 258);
+            this.check_noMarksman.Name = "check_noMarksman";
+            this.check_noMarksman.Size = new System.Drawing.Size(75, 17);
+            this.check_noMarksman.TabIndex = 35;
+            this.check_noMarksman.Text = "Marksman";
+            this.check_noMarksman.UseVisualStyleBackColor = true;
+            // 
+            // check_noSAM
+            // 
+            this.check_noSAM.AutoSize = true;
+            this.check_noSAM.Location = new System.Drawing.Point(623, 143);
+            this.check_noSAM.Name = "check_noSAM";
+            this.check_noSAM.Size = new System.Drawing.Size(76, 17);
+            this.check_noSAM.TabIndex = 34;
+            this.check_noSAM.Text = "SAM turret";
+            this.check_noSAM.UseVisualStyleBackColor = true;
+            // 
+            // check_noReconDrone
+            // 
+            this.check_noReconDrone.AutoSize = true;
+            this.check_noReconDrone.Location = new System.Drawing.Point(623, 166);
+            this.check_noReconDrone.Name = "check_noReconDrone";
+            this.check_noReconDrone.Size = new System.Drawing.Size(88, 17);
+            this.check_noReconDrone.TabIndex = 33;
+            this.check_noReconDrone.Text = "Recon drone";
+            this.check_noReconDrone.UseVisualStyleBackColor = true;
+            // 
+            // check_noReaper
+            // 
+            this.check_noReaper.AutoSize = true;
+            this.check_noReaper.Location = new System.Drawing.Point(33, 258);
+            this.check_noReaper.Name = "check_noReaper";
+            this.check_noReaper.Size = new System.Drawing.Size(61, 17);
+            this.check_noReaper.TabIndex = 32;
+            this.check_noReaper.Text = "Reaper";
+            this.check_noReaper.UseVisualStyleBackColor = true;
+            // 
+            // check_noPaveLow
+            // 
+            this.check_noPaveLow.AutoSize = true;
+            this.check_noPaveLow.Location = new System.Drawing.Point(172, 74);
+            this.check_noPaveLow.Name = "check_noPaveLow";
+            this.check_noPaveLow.Size = new System.Drawing.Size(74, 17);
+            this.check_noPaveLow.TabIndex = 31;
+            this.check_noPaveLow.Text = "Pave Low";
+            this.check_noPaveLow.UseVisualStyleBackColor = true;
+            // 
+            // check_noHelo
+            // 
+            this.check_noHelo.AutoSize = true;
+            this.check_noHelo.Location = new System.Drawing.Point(33, 189);
+            this.check_noHelo.Name = "check_noHelo";
+            this.check_noHelo.Size = new System.Drawing.Size(106, 17);
+            this.check_noHelo.TabIndex = 30;
+            this.check_noHelo.Text = "Attack helicopter";
+            this.check_noHelo.UseVisualStyleBackColor = true;
+            // 
+            // check_noEscortairdrop
+            // 
+            this.check_noEscortairdrop.AutoSize = true;
+            this.check_noEscortairdrop.Location = new System.Drawing.Point(765, 74);
+            this.check_noEscortairdrop.Name = "check_noEscortairdrop";
+            this.check_noEscortairdrop.Size = new System.Drawing.Size(91, 17);
+            this.check_noEscortairdrop.TabIndex = 29;
+            this.check_noEscortairdrop.Text = "Escort airdrop";
+            this.check_noEscortairdrop.UseVisualStyleBackColor = true;
+            // 
+            // check_noEMP
+            // 
+            this.check_noEMP.AutoSize = true;
+            this.check_noEMP.Location = new System.Drawing.Point(623, 258);
+            this.check_noEMP.Name = "check_noEMP";
+            this.check_noEMP.Size = new System.Drawing.Size(49, 17);
+            this.check_noEMP.TabIndex = 28;
+            this.check_noEMP.Text = "EMP";
+            this.check_noEMP.UseVisualStyleBackColor = true;
+            // 
+            // check_noBalvests
+            // 
+            this.check_noBalvests.AutoSize = true;
+            this.check_noBalvests.Location = new System.Drawing.Point(623, 97);
+            this.check_noBalvests.Name = "check_noBalvests";
+            this.check_noBalvests.Size = new System.Drawing.Size(89, 17);
+            this.check_noBalvests.TabIndex = 27;
+            this.check_noBalvests.Text = "Ballistic vests";
+            this.check_noBalvests.UseVisualStyleBackColor = true;
+            // 
+            // check_noOverwatch
+            // 
+            this.check_noOverwatch.AutoSize = true;
+            this.check_noOverwatch.Location = new System.Drawing.Point(33, 235);
+            this.check_noOverwatch.Name = "check_noOverwatch";
+            this.check_noOverwatch.Size = new System.Drawing.Size(102, 17);
+            this.check_noOverwatch.TabIndex = 26;
+            this.check_noOverwatch.Text = "AH6 Overwatch";
+            this.check_noOverwatch.UseVisualStyleBackColor = true;
+            // 
+            // check_noCUAV
+            // 
+            this.check_noCUAV.AutoSize = true;
+            this.check_noCUAV.Location = new System.Drawing.Point(623, 74);
+            this.check_noCUAV.Name = "check_noCUAV";
+            this.check_noCUAV.Size = new System.Drawing.Size(88, 17);
+            this.check_noCUAV.TabIndex = 25;
+            this.check_noCUAV.Text = "Counter UAV";
+            this.check_noCUAV.UseVisualStyleBackColor = true;
+            // 
+            // check_noStrafeRun
+            // 
+            this.check_noStrafeRun.AutoSize = true;
+            this.check_noStrafeRun.Location = new System.Drawing.Point(33, 212);
+            this.check_noStrafeRun.Name = "check_noStrafeRun";
+            this.check_noStrafeRun.Size = new System.Drawing.Size(72, 17);
+            this.check_noStrafeRun.TabIndex = 24;
+            this.check_noStrafeRun.Text = "Strafe run";
+            this.check_noStrafeRun.UseVisualStyleBackColor = true;
+            // 
+            // check_noTrapcp
+            // 
+            this.check_noTrapcp.AutoSize = true;
+            this.check_noTrapcp.Location = new System.Drawing.Point(623, 120);
+            this.check_noTrapcp.Name = "check_noTrapcp";
+            this.check_noTrapcp.Size = new System.Drawing.Size(135, 17);
+            this.check_noTrapcp.TabIndex = 23;
+            this.check_noTrapcp.Text = "Trapped care package";
+            this.check_noTrapcp.UseVisualStyleBackColor = true;
+            // 
+            // check_noIMS
+            // 
+            this.check_noIMS.AutoSize = true;
+            this.check_noIMS.Location = new System.Drawing.Point(33, 97);
+            this.check_noIMS.Name = "check_noIMS";
+            this.check_noIMS.Size = new System.Drawing.Size(45, 17);
+            this.check_noIMS.TabIndex = 22;
+            this.check_noIMS.Text = "IMS";
+            this.check_noIMS.UseVisualStyleBackColor = true;
+            // 
+            // check_noSentry
+            // 
+            this.check_noSentry.AutoSize = true;
+            this.check_noSentry.Location = new System.Drawing.Point(33, 143);
+            this.check_noSentry.Name = "check_noSentry";
+            this.check_noSentry.Size = new System.Drawing.Size(77, 17);
+            this.check_noSentry.TabIndex = 21;
+            this.check_noSentry.Text = "Sentry gun";
+            this.check_noSentry.UseVisualStyleBackColor = true;
+            // 
+            // check_noRemotedrone
+            // 
+            this.check_noRemotedrone.AutoSize = true;
+            this.check_noRemotedrone.Location = new System.Drawing.Point(172, 51);
+            this.check_noRemotedrone.Name = "check_noRemotedrone";
+            this.check_noRemotedrone.Size = new System.Drawing.Size(90, 17);
+            this.check_noRemotedrone.TabIndex = 20;
+            this.check_noRemotedrone.Text = "Assault drone";
+            this.check_noRemotedrone.UseVisualStyleBackColor = true;
+            // 
+            // check_noJugrecon
+            // 
+            this.check_noJugrecon.AutoSize = true;
+            this.check_noJugrecon.Location = new System.Drawing.Point(765, 51);
+            this.check_noJugrecon.Name = "check_noJugrecon";
+            this.check_noJugrecon.Size = new System.Drawing.Size(111, 17);
+            this.check_noJugrecon.TabIndex = 19;
+            this.check_noJugrecon.Text = "Recon juggernaut";
+            this.check_noJugrecon.UseVisualStyleBackColor = true;
+            // 
+            // check_noJug
+            // 
+            this.check_noJug.AutoSize = true;
+            this.check_noJug.Location = new System.Drawing.Point(172, 97);
+            this.check_noJug.Name = "check_noJug";
+            this.check_noJug.Size = new System.Drawing.Size(79, 17);
+            this.check_noJug.TabIndex = 18;
+            this.check_noJug.Text = "Juggernaut";
+            this.check_noJug.UseVisualStyleBackColor = true;
+            // 
+            // check_noCarepackage
+            // 
+            this.check_noCarepackage.AutoSize = true;
+            this.check_noCarepackage.Location = new System.Drawing.Point(33, 74);
+            this.check_noCarepackage.Name = "check_noCarepackage";
+            this.check_noCarepackage.Size = new System.Drawing.Size(93, 17);
+            this.check_noCarepackage.TabIndex = 17;
+            this.check_noCarepackage.Text = "Care package";
+            this.check_noCarepackage.UseVisualStyleBackColor = true;
+            // 
+            // check_noAC130
+            // 
+            this.check_noAC130.AutoSize = true;
+            this.check_noAC130.Location = new System.Drawing.Point(172, 143);
+            this.check_noAC130.Name = "check_noAC130";
+            this.check_noAC130.Size = new System.Drawing.Size(58, 17);
+            this.check_noAC130.TabIndex = 16;
+            this.check_noAC130.Text = "AC130";
+            this.check_noAC130.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
@@ -693,7 +1215,6 @@ namespace DesktopApp1
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Default classes Axis";
             this.tabPage8.UseVisualStyleBackColor = true;
-            this.tabPage8.Click += new System.EventHandler(this.tabPage8_Click);
             // 
             // comboBox1
             // 
@@ -708,7 +1229,6 @@ namespace DesktopApp1
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 42;
             this.comboBox1.Text = "Max health";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // checkBox10
             // 
@@ -789,7 +1309,6 @@ namespace DesktopApp1
             this.checkBox3.TabIndex = 34;
             this.checkBox3.Text = "Allow perks";
             this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -800,7 +1319,6 @@ namespace DesktopApp1
             this.checkBox2.TabIndex = 33;
             this.checkBox2.Text = "Allow killstreaks";
             this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -811,7 +1329,6 @@ namespace DesktopApp1
             this.checkBox1.TabIndex = 32;
             this.checkBox1.Text = "Allow custom classes";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label19
             // 
@@ -893,16 +1410,6 @@ namespace DesktopApp1
             this.label9.Size = new System.Drawing.Size(169, 13);
             this.label9.TabIndex = 21;
             this.label9.Text = "Health regen rate (default: 5, 0-10)";
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(87, 44);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(56, 17);
-            this.checkBox11.TabIndex = 1;
-            this.checkBox11.Text = "ACOG";
-            this.checkBox11.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -996,7 +1503,50 @@ namespace DesktopApp1
         private System.Windows.Forms.CheckBox check_noHolo;
         private System.Windows.Forms.CheckBox check_noAkimbo;
         private System.Windows.Forms.CheckBox check_noAcog;
-        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox check_noPaveLow;
+        private System.Windows.Forms.CheckBox check_noHelo;
+        private System.Windows.Forms.CheckBox check_noEscortairdrop;
+        private System.Windows.Forms.CheckBox check_noEMP;
+        private System.Windows.Forms.CheckBox check_noBalvests;
+        private System.Windows.Forms.CheckBox check_noOverwatch;
+        private System.Windows.Forms.CheckBox check_noCUAV;
+        private System.Windows.Forms.CheckBox check_noStrafeRun;
+        private System.Windows.Forms.CheckBox check_noTrapcp;
+        private System.Windows.Forms.CheckBox check_noIMS;
+        private System.Windows.Forms.CheckBox check_noSentry;
+        private System.Windows.Forms.CheckBox check_noRemotedrone;
+        private System.Windows.Forms.CheckBox check_noJugrecon;
+        private System.Windows.Forms.CheckBox check_noJug;
+        private System.Windows.Forms.CheckBox check_noCarepackage;
+        private System.Windows.Forms.CheckBox check_noAC130;
+        private System.Windows.Forms.CheckBox check_noStalker;
+        private System.Windows.Forms.CheckBox check_noScavenger;
+        private System.Windows.Forms.CheckBox check_noDS;
+        private System.Windows.Forms.CheckBox check_noQuickdraw;
+        private System.Windows.Forms.CheckBox check_noRecon;
+        private System.Windows.Forms.CheckBox check_noMarathon;
+        private System.Windows.Forms.CheckBox check_noHardline;
+        private System.Windows.Forms.CheckBox check_noSoH;
+        private System.Windows.Forms.CheckBox check_noSitRep;
+        private System.Windows.Forms.CheckBox check_noAssassin;
+        private System.Windows.Forms.CheckBox check_noSteadyAim;
+        private System.Windows.Forms.CheckBox check_noBlindEye;
+        private System.Windows.Forms.CheckBox check_noRemoteSentry;
+        private System.Windows.Forms.CheckBox check_noPredator;
+        private System.Windows.Forms.CheckBox check_noPrecision;
+        private System.Windows.Forms.CheckBox check_noOspreyGun;
+        private System.Windows.Forms.CheckBox check_noMarksman;
+        private System.Windows.Forms.CheckBox check_noSAM;
+        private System.Windows.Forms.CheckBox check_noReconDrone;
+        private System.Windows.Forms.CheckBox check_noReaper;
+        private System.Windows.Forms.Label lbl_killstreakType_asst;
+        private System.Windows.Forms.CheckBox check_noBlastShield;
+        private System.Windows.Forms.CheckBox check_noStealthBomb;
+        private System.Windows.Forms.CheckBox check_noAdvUAV;
+        private System.Windows.Forms.CheckBox check_noUavAssault;
+        private System.Windows.Forms.CheckBox check_noUavSupport;
+        private System.Windows.Forms.Label lbl_killstreakType_sup;
+        private System.Windows.Forms.Label lbl_killstreakType_spec;
     }
 }
 
